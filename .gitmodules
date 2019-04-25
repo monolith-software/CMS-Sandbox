@@ -64,3 +64,6 @@
 [submodule "src/SmartCore/Bundle/SeoBundle"]
 	path = src/SmartCore/Bundle/SeoBundle
 	url = https://github.com/Smart-Core/SeoBundle
+[submodule "src/SmartCore/Bundle/FelibBundle"]
+	path = src/SmartCore/Bundle/FelibBundle
+	url = https://github.com/Smart-Core/FelibBundle
