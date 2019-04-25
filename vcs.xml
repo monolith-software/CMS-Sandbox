@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="VcsDirectoryMappings">
+    <mapping directory="$PROJECT_DIR$" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/Monolith/Bundle/CMSBundle" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/Monolith/Bundle/CMSGeneratorBundle" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/Smart/CoreBundle" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/SmartCore/Bundle/AcceleratorCacheBundle" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/SmartCore/Bundle/DbDumperBundle" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/SmartCore/Bundle/FelibBundle" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/SmartCore/Bundle/HtmlBundle" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/SmartCore/Bundle/MediaBundle" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/SmartCore/Bundle/RichEditorBundle" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/SmartCore/Bundle/SeoBundle" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/SmartCore/Bundle/SettingsBundle" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/SmartCore/Bundle/SimpleProfilerBundle" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/SmartCore/Bundle/SitemapBundle" vcs="Git" />
+  </component>
+</project>
