@@ -98,6 +98,7 @@
         "sensio/framework-extra-bundle": "^5.0.0",
         "sensio/generator-bundle": "^3.0",
         "sensiolabs/ansi-to-html": "^1.1",
+        "smart-core/ladybug-bundle": "~0.7",
         "sonata-project/intl-bundle": "~2.0@dev",
         "spatie/flysystem-dropbox": "*",
         "stfalcon/tinymce-bundle": "v2.1",

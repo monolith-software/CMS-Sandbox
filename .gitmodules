@@ -1,3 +1,66 @@
 [submodule "src/Monolith/Bundle/CMSBundle"]
 	path = src/Monolith/Bundle/CMSBundle
 	url = https://github.com/monolith-software/cms-bundle
+[submodule "src/Monolith/Bundle/CMSGeneratorBundle"]
+	path = src/Monolith/Bundle/CMSGeneratorBundle
+	url = https://github.com/monolith-software/cms-generator-bundle
+[submodule "src/Monolith/Module/Breadcrumbs"]
+	path = src/Monolith/Module/Breadcrumbs
+	url = https://github.com/monolith-software/module-breadcrumbs
+[submodule "src/Monolith/Module/Google"]
+	path = src/Monolith/Module/Google
+	url = https://github.com/monolith-software/module-google
+[submodule "src/Monolith/Module/Slider"]
+	path = src/Monolith/Module/Slider
+	url = https://github.com/monolith-software/module-slider
+[submodule "src/Monolith/Module/Texter"]
+	path = src/Monolith/Module/Texter
+	url = https://github.com/monolith-software/module-texter
+[submodule "src/Monolith/Module/User"]
+	path = src/Monolith/Module/User
+	url = https://github.com/monolith-software/module-user
+[submodule "src/Monolith/Module/WebForm"]
+	path = src/Monolith/Module/WebForm
+	url = https://github.com/monolith-software/module-webform
+[submodule "src/Monolith/Module/Yandex"]
+	path = src/Monolith/Module/Yandex
+	url = https://github.com/monolith-software/module-yandex
+[submodule "src/Monolith/Module/Unicat"]
+	path = src/Monolith/Module/Unicat
+	url = https://github.com/monolith-software/module-unicat
+[submodule "src/Monolith/Module/Gallery"]
+	path = src/Monolith/Module/Gallery
+	url = https://github.com/monolith-software/module-gallery
+[submodule "src/Monolith/Module/Menu"]
+	path = src/Monolith/Module/Menu
+	url = https://github.com/monolith-software/module-menu
+[submodule "src/SmartCore/Bundle/HtmlBundle"]
+	path = src/SmartCore/Bundle/HtmlBundle
+	url = https://github.com/Smart-Core/HtmlBundle
+[submodule "src/SmartCore/Bundle/MediaBundle"]
+	path = src/SmartCore/Bundle/MediaBundle
+	url = https://github.com/Smart-Core/MediaBundle
+[submodule "src/SmartCore/Bundle/DbDumperBundle"]
+	path = src/SmartCore/Bundle/DbDumperBundle
+	url = https://github.com/Smart-Core/DbDumperBundle
+[submodule "src/SmartCore/Bundle/SettingsBundle"]
+	path = src/SmartCore/Bundle/SettingsBundle
+	url = https://github.com/Smart-Core/SettingsBundle
+[submodule "src/SmartCore/Bundle/AcceleratorCacheBundle"]
+	path = src/SmartCore/Bundle/AcceleratorCacheBundle
+	url = https://github.com/Smart-Core/AcceleratorCacheBundle
+[submodule "src/Smart/CoreBundle"]
+	path = src/Smart/CoreBundle
+	url = https://github.com/Smart-Core/CoreBundle
+[submodule "src/SmartCore/Bundle/SitemapBundle"]
+	path = src/SmartCore/Bundle/SitemapBundle
+	url = https://github.com/Smart-Core/SitemapBundle
+[submodule "src/SmartCore/Bundle/RichEditorBundle"]
+	path = src/SmartCore/Bundle/RichEditorBundle
+	url = https://github.com/Smart-Core/RichEditorBundle
+[submodule "src/SmartCore/Bundle/SimpleProfilerBundle"]
+	path = src/SmartCore/Bundle/SimpleProfilerBundle
+	url = https://github.com/Smart-Core/SimpleProfilerBundle
+[submodule "src/SmartCore/Bundle/SeoBundle"]
+	path = src/SmartCore/Bundle/SeoBundle
+	url = https://github.com/Smart-Core/SeoBundle
