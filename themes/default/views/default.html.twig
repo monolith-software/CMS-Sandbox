@@ -1,0 +1,68 @@
+{% extends '@Html/base.html.twig' %}
+
+{% set use_libs = {
+    'bootstrap': '3',
+    'pnotify': null,
+    'syntaxhighlighter': null,
+} %}
+
+{% block title %}{{ cms_html_title() }}{% endblock %}
+
+{% block styles %}
+    {{ parent() }}
+
+  {# @todo
+  {{ theme_styles({
+    'components/swiper/dist/css/swiper.min.css',
+    'components/swiper/dist/css/featherlight.css',
+    'css/app.css'
+  }) }}
+  #}
+
+    <style media="all" type="text/css">
+        @import url({{ theme_asset('css/screen.css') }});
+        @import url({{ theme_asset('css/dark_theme.css') }});
+        @import url({{ theme_asset('css/wp-syntax.css') }});
+    </style>
+{% endblock %}
+
+{% block scripts %}
+    {{ parent() }}
+    <script type="text/javascript">
+        SyntaxHighlighter.defaults['toolbar'] = false;
+        SyntaxHighlighter.all();
+    </script>
+{% endblock %}
+
+{% block body %}
+    {% include '@SmartCore/pnotify_flash_messages.html.twig' %}
+
+    <div class="container">
+        <div class="row">
+            <div class="span3 col-md-3 col-sm-3 col-xs-12">
+                Hello, <b>{% if app.user %}{{ app.user }}{% else %}{{ 'Guest'|trans }}{% endif %}</b>
+
+                {{ main_menu }}
+            </div>
+
+            <div class="span9 col-md-9 col-sm-9 col-xs-12">
+                <div id="breadcrumbs">
+                    {{ breadcrumbs }}
+                </div>
+
+                <div id="content">
+                    {% block content content %}
+                </div>
+            </div>
+        </div>
+        <div class="row row-fluid" id="footer">
+            <div class="span12 col-md-12 col-sm-12 col-xs-12">
+                {{ footer }}
+            </div>
+
+            <div class="span11 text-center">
+                <p><small>{{ simple_profiler() }}</small></p>
+            </div>
+        </div>
+    </div>
+{% endblock body %}

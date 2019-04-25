@@ -1,0 +1,49 @@
+{% extends '@Html/base.html.twig' %}
+
+{% set use_libs = {
+    'bootstrap': '3',
+} %}
+
+{% block title %}{{ cms_html_title() }}{% endblock %}
+
+{% block styles %}
+    {{ parent() }}
+    <style media="all" type="text/css">
+        @import url({{ asset('bundles/site/css/screen.css') }});
+    </style>
+{% endblock %}
+
+{% block scripts %}
+    {{ parent() }}
+{% endblock %}
+
+{% block body %}
+<div class="container">
+<div class="row">
+    <div class="span3 col-md-3 col-sm-3 col-xs-12">
+        {{ main_menu }}
+    </div>
+
+    <div class="span9 col-md-9 col-sm-9 col-xs-12">
+        <div id="breadcrumbs">
+            {{ breadcrumbs }}
+        </div>
+
+        {% include '@SmartCore/flash_messages.html.twig' %}
+
+        <div id="content">
+            {% block content content %}
+        </div>
+    </div>
+</div>
+<div class="row row-fluid" id="footer">
+    <div class="span12 col-md-12 col-sm-12 col-xs-12">
+        {{ footer }}
+    </div>
+
+    <div class="span11 text-center">
+        <p><small>{{ simple_profiler() }}</small></p>
+    </div>
+</div>
+</div>
+{% endblock body %}

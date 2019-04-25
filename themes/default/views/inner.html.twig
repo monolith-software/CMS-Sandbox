@@ -1,0 +1,20 @@
+{% extends 'default.html.twig' %}
+
+{% set felib = felib_use('less') %}
+
+{% block styles %}
+    {{ parent() }}
+    <link href="{{ theme_asset('images/favicon_aviao.ico') }}" rel="icon" type="image/vnd.microsoft.icon" />
+    <link href="{{ theme_asset('css/styles.less') }}" media="all" rel="stylesheet/less" type="text/css" />
+{% endblock %}
+
+{% block content %}
+<div class="row row-fluid">
+    <div class="span6 col-md-6 col-sm-6 col-xs-6">
+        {{ parent() }}
+    </div>
+    <div class="span6 col-md-6 col-sm-6 col-xs-6">
+        {% block right_column right_column %}
+    </div>
+</div>
+{% endblock content %}

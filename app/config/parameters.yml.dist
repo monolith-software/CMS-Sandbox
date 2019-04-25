@@ -1,0 +1,33 @@
+# This file is a "template" of what your parameters.yml file should look like
+# Set parameters here that may be different on each deployment target of the app, e.g. development, staging, production.
+# https://symfony.com/doc/current/best_practices/configuration.html#infrastructure-related-configuration
+parameters:
+    base_url: 'http://monolith-cms'
+    orm_cache_driver: apcu   # apc, apcu, wincache, xcache or ~
+    database_name: symfony
+    database_user: root
+    database_password: ~
+    database_driver: pdo_mysql
+    database_host: 127.0.0.1
+    database_port: ~
+    database_socket: /var/run/mysqld/mysqld.sock
+
+    cms_prod_url: ~
+    cms_dev_api: []
+
+    # Rewrite domains for local developers
+    cms_sites_domains:
+        1: ~ # Site ID and domain name for switching in multisite mode
+
+    # You should uncomment this if you want to use pdo_sqlite
+    #database_path: '%kernel.project_dir%/var/data/data.sqlite'
+
+    locale: ru
+
+    mailer_transport: smtp
+    mailer_host: 127.0.0.1
+    mailer_user: ~
+    mailer_password: ~
+
+    # A secret key that's used to generate certain security-related tokens
+    secret: ThisTokenIsNotSoSecretChangeIt

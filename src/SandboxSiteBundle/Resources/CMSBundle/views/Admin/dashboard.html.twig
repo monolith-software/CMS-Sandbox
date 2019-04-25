@@ -1,0 +1,30 @@
+{% extends '@CMS/admin.html.twig' %}
+
+{% block page_header 'Dashboard'|trans %}
+{% block page_description 'Control panel'|trans %}
+{% block content_header_wrapper '' %}
+
+{% block content_body %}
+    <h1>Добро пожаловать в Monolith CMS!</h1>
+
+    <p>План работ:</p>
+
+    <ul>
+        <li>Управление модулями</li>
+    </ul>
+
+    <br>
+    <h3>Инсталляция</h3>
+    <p>Должа будет происходить в следующей последовательности:</p>
+
+    <ol>
+        <li>Создание админа</li>
+        <li>Создание языка в БД</li>
+        <li>Создание сайта в БД</li>
+        <li>Создание корневой папки</li>
+        <li>Создание обязательной области <strong>content</strong></li>
+        <li>Создание медиаколлекции</li>
+        <li>Генерация SiteBundle</li>
+        <li>При первом заходе через веб, попытка связаться с сервером и получить instance_id</li>
+    </ol>
+{% endblock %}

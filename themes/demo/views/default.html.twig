@@ -1,0 +1,117 @@
+{% extends '@Html/base.html.twig' %}
+
+{% set use_libs = {
+    'bootstrap': '3',
+} %}
+
+{% block title %}{{ cms_html_title() }}{% endblock %}
+
+{% block styles %}
+    {{ parent() }}
+    <style media="all" type="text/css">
+        @import url({{ asset('bundles/site/css/screen.css') }});
+    </style>
+{% endblock %}
+
+{#
+{% block scripts %}
+    {{ parent() }}
+{% endblock %}
+
+{% block meta %}
+    {{ parent() }}
+{% endblock meta %}
+#}
+
+{% block body %}
+
+{% block site_header '' %}
+<div id="site-header">
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+
+                <div class="site-header-tile">
+                    <h1>Smart Core</h1>
+                    <h2>Content Managment System</h2>
+                </div>
+
+                <div class="site-header-tile" style="float: right;">
+                    Система управления сайтами основанная на технологиях
+                    <br />
+                    <img src="{{ asset('bundles/site/images/php2.png') }}" title="PHP Language" style="width: 78px; margin: 10px 0px 0px 0px;">
+                    <img src="{{ asset('bundles/site/images/symfony_white_01.png') }}" title="Symfony Framework" style="width: 200px; margin: 10px 0px 0px 10px;">
+                    <img src="{{ asset('bundles/site/images/mysql2-2.png') }}" title="MySQL Database" style="width: 100px; margin: 0px 0px 0px 25px;">
+
+                </div>
+
+                <div class="clear"></div>
+
+                <div class="col-md-12 site-header-buttons">
+                    <a href="/download/" class="btn btn-success btn-lg"><span class="glyphicon glyphicon-download-alt"></span> Скачать Smart Core CMS</a>
+
+                    <a href="#demo" class="btn btn-warning btn-lg"><span class="glyphicon glyphicon-eye-open"></span> Попробовать демо</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<div id="site-menu">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                {% block main_menu main_menu %}
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="container">
+
+    <div class="row">
+        <div id="content" class="col-md-12 site-block">
+            {% include '@SmartCore/flash_messages.html.twig' %}
+
+            {% block content content %}
+        </div>
+    </div>
+
+</div>
+
+<div id="site-footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                &copy; 2015 Smart Core Web Solutions
+                {% block footer footer %}
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock body %}
+
+{% block body_js %}
+    {{ parent() }}
+    {#
+    <script type="text/javascript">
+
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-20750359-1']);
+        _gaq.push(['_setDomainName', '.smart-core.org']);
+        _gaq.push(['_trackPageview']);
+
+        (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+
+    </script>
+    #}
+{% endblock body_js %}

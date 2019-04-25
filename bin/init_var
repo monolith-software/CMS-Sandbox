@@ -1,0 +1,58 @@
+#!/bin/bash
+
+DIR="var"
+
+if [ ! -d "src" ]; then
+    mkdir src
+    cp vendor/smart-core/cms-generator-bundle/Resources/skeleton/User.php app/Entity/User.php
+    echo "  src created"
+fi
+
+if [ ! -d "$DIR" ]; then
+    mkdir $DIR
+    mkdir $DIR/cache
+    mkdir $DIR/db_dumps
+    mkdir $DIR/db_dumps/mysql
+    mkdir $DIR/logs
+    mkdir $DIR/mailspool
+    echo "  $DIR directory created"
+fi
+
+if [ ! -d "$DIR/sessions" ]; then
+    mkdir $DIR/sessions
+    echo "  Sessions directory created"
+fi
+
+if [ ! -d "web/uploads" ]; then
+    mkdir web/uploads
+    echo "Options -Indexes" > web/uploads/.htaccess
+    echo "  web/uploads created"
+fi
+
+if [ ! -d "web/images" ]; then
+    mkdir web/images
+    echo "Options -Indexes" > web/images/.htaccess
+    echo "  web/images created"
+fi
+
+if [ ! -d "web/_media" ]; then
+    mkdir web/_media
+    echo "Options -Indexes" > web/_media/.htaccess
+    echo "  web/_media created"
+fi
+
+# update directories permissions
+find src/*SiteBundle/Resources/public -type d -exec chmod 777 {} \;
+#find src/*SiteBundle/Resources/views -type d -exec chmod 777 {} \;
+find web/_media -type d -exec chmod 777 {} \;
+find web/images -type d -exec chmod 777 {} \;
+find web/uploads -type d -exec chmod 777 {} \;
+
+# update files permissions
+chmod -R 0777 $DIR
+find bin -type f -exec chmod 777 {} \;
+#find src/*SiteBundle/Resources/public/css -type f -exec chmod 666 {} \;
+#find src/*SiteBundle/Resources/views -type f -exec chmod 666 {} \;
+find web/_media -type f -exec chmod 666 {} \;
+find web/images -type f -exec chmod 666 {} \;
+find web/uploads -type f -exec chmod 666 {} \;

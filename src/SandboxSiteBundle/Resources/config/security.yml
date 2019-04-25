@@ -1,0 +1,12 @@
+imports:
+    - { resource: '@CMSBundle/Resources/config/security_access_control.yml' }
+
+security:
+    firewalls:
+        admin:
+            remember_me:
+                name: SANDBOX_SITE_REMEMBER_ME
+        main:
+            remember_me:
+                name: SANDBOX_SITE_REMEMBER_ME
+

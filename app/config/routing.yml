@@ -1,0 +1,7 @@
+#app:
+#    resource: '@AppBundle/Controller/'
+#    type: annotation
+
+monolith_cms:
+    resource: '@CMSBundle/Resources/config/routing/routing.yml'
+    prefix: /

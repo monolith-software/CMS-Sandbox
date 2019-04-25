@@ -1,0 +1,20 @@
+{% if not depth %}
+    {% set depth = null %}
+{% endif %}
+
+{% if not current_class %}
+    {% set current_class = 'current' %}
+{% endif %}
+
+{% set menuItems = knp_menu_get('MenuModuleBundle:MenuBuilder:full', [], {
+    'menu': menu,
+    'css_class': css_class,
+    'depth': depth,
+}) %}
+
+{{ knp_menu_render(menuItems, {
+    'currentAsLink': true,
+    'currentClass': current_class,
+    'compressed': true,
+    'depth': depth,
+}) }}

@@ -1,0 +1,9 @@
+
+site_hi:
+    path:  /hi/
+    defaults: { _controller: SiteBundle:Hello:index }
+
+# Так можно перегружать дефолтные маршруты медиалибы
+#site.images:
+#    resource: '@SmartMediaBundle/Resources/config/routing.yml'
+#    prefix: /_media/

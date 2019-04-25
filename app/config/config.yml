@@ -1,0 +1,22 @@
+imports:
+    - { resource: parameters.yml }
+    - { resource: install.yml, ignore_errors: true }
+    - { resource: '@CMSBundle/Resources/config/security.yml' }
+    - { resource: '@CMSBundle/Resources/config/config.yml' }
+    - { resource: security.yml, ignore_errors: true } # Для конфигурирования access_control
+
+accelerator_cache:
+    host: "%base_url%"
+    mode: curl
+
+smart_sitemap:
+    base_url: "%base_url%"
+    ignores:
+        - 'http:'
+        - 'https:'
+        - 'javascript:'
+        - 'mailto:'
+        - 'skype:'
+        - '/user/'
+        - '/admin/'
+        - '/api/'

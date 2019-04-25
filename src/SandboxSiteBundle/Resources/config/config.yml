@@ -1,0 +1,36 @@
+parameters:
+    user_class: SandboxSiteBundle\Entity\User
+    #admin_path: control_panel
+
+smart_db_dumper:
+    filename: monolith_cms
+    archive: ~
+    make_copy_to_project_root: true
+    make_dump_before_restore: true
+
+#dizda_cloud_backup:
+#    output_file_prefix: monolith_cms
+#    cloud_storages:
+#        dropbox:
+#            user:        "%dizda_cloud_dropbox_user%"
+#            password:    "%dizda_cloud_dropbox_password%"
+#            remote_path: "%dizda_cloud_dropbox_remote_path%"
+#    databases:
+#        mysql:
+#            all_databases: false        # Only required when no database is set
+#            database: "%database_name%" # Required if all_databases is false
+
+#knp_disqus:
+#    api_key: "%knp_disqus.api_key%"
+
+liip_imagine:
+    filter_sets:
+        demo-site-thumb:
+            format: jpeg
+            jpeg_quality: 86
+            quality: 86
+            filters:
+                strip: ~
+                upscale:
+                    min: [525, 525]
+                thumbnail: { size: [525, 525], mode: outbound }

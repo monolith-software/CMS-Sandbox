@@ -1,0 +1,41 @@
+#!/usr/bin/env php
+<?php
+
+set_time_limit(0);
+
+// web-server user
+Warmuper::$user = 'www-data'; // or 'apache' in Gentoo
+Warmuper::$rootDir = dirname(__DIR__);
+
+$env = isset($argv[1]) ? $argv[1] : null;
+
+if ($env) {
+    echo "Warmup the cache for '$env'... \n";
+    Warmuper::run($env);
+} else {
+    echo "Warmup the cache... \n";
+    Warmuper::run('prod');
+    Warmuper::run('dev');
+}
+
+class Warmuper
+{
+    static public $interpreter = '';
+    static public $rootDir;
+    static public $user = null;
+
+    static public function run($env, $debug = null)
+    {
+        if (defined('PHP_WINDOWS_VERSION_BUILD')) { // php on windows can't use the shebang line from system()
+            self::$interpreter = 'php.exe';
+        } elseif (!empty($user)) {
+            self::$interpreter = 'sudo -u '.$user;
+        }
+
+        system(sprintf("%s %s cache:warmup --env=$env $debug", self::$interpreter, escapeshellarg(self::$rootDir.'/bin/console')));
+
+        if (!defined('PHP_WINDOWS_VERSION_BUILD') and !empty(self::$user)) {
+            system('chown -hR '.self::$user.':'.self::$user.' '.self::$rootDir."/var/cache/$env/");
+        }
+    }
+}

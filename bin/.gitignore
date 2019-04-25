@@ -1,0 +1,8 @@
+*
+!*.gitignore
+!clear_cache
+!console
+!init_var
+!rebuild_cache
+!twig_clear_cache
+!warmup_cache
