@@ -1,0 +1,3 @@
+[submodule "src/Monolith/Bundle/CMSBundle"]
+	path = src/Monolith/Bundle/CMSBundle
+	url = https://github.com/monolith-software/cms-bundle
