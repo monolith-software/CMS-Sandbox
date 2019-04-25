@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "a4ce07930a86eeae2276d8f0ae5d64bf",
+    "content-hash": "2deaa1668aac277bc62fc11692b9785a",
     "packages": [
         {
             "name": "api-platform/core",
@@ -12313,6 +12313,48 @@
             "time": "2017-12-01T17:50:49+00:00"
         },
         {
+            "name": "smart-core/simple-profiler-bundle",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Smart-Core/SimpleProfilerBundle.git",
+                "reference": "2851cdd2a4092f2921b7797ee867015c77769b4d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Smart-Core/SimpleProfilerBundle/zipball/2851cdd2a4092f2921b7797ee867015c77769b4d",
+                "reference": "2851cdd2a4092f2921b7797ee867015c77769b4d",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4.1"
+            },
+            "type": "symfony-bundle",
+            "autoload": {
+                "files": [
+                    "Profiler.php"
+                ],
+                "psr-4": {
+                    "SmartCore\\Bundle\\SimpleProfilerBundle\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Artem Ryzhkov",
+                    "email": "artem@smart-core.org"
+                }
+            ],
+            "homepage": "http://smart-core.org",
+            "keywords": [
+                "profiler"
+            ],
+            "time": "2016-11-09T04:50:35+00:00"
+        },
+        {
             "name": "sonata-project/intl-bundle",
             "version": "2.x-dev",
             "source": {
@@ -17052,6 +17094,7 @@
         "knplabs/knp-menu-bundle": 20,
         "liip/theme-bundle": 20,
         "mopa/bootstrap-bundle": 20,
+        "smart-core/simple-profiler-bundle": 20,
         "sonata-project/intl-bundle": 20,
         "white-october/pagerfanta-bundle": 20,
         "whiteoctober/breadcrumbs-bundle": 20

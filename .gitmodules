@@ -58,9 +58,6 @@
 [submodule "src/SmartCore/Bundle/RichEditorBundle"]
 	path = src/SmartCore/Bundle/RichEditorBundle
 	url = https://github.com/Smart-Core/RichEditorBundle
-[submodule "src/SmartCore/Bundle/SimpleProfilerBundle"]
-	path = src/SmartCore/Bundle/SimpleProfilerBundle
-	url = https://github.com/Smart-Core/SimpleProfilerBundle
 [submodule "src/SmartCore/Bundle/SeoBundle"]
 	path = src/SmartCore/Bundle/SeoBundle
 	url = https://github.com/Smart-Core/SeoBundle
