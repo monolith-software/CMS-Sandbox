@@ -4,6 +4,16 @@
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/src/Monolith/Bundle/CMSBundle" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/src/Monolith/Bundle/CMSGeneratorBundle" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/Monolith/Module/Breadcrumbs" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/Monolith/Module/Gallery" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/Monolith/Module/Google" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/Monolith/Module/Menu" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/Monolith/Module/Slider" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/Monolith/Module/Texter" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/Monolith/Module/Unicat" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/Monolith/Module/User" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/Monolith/Module/WebForm" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/Monolith/Module/Yandex" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/src/Smart/CoreBundle" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/src/SmartCore/Bundle/AcceleratorCacheBundle" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/src/SmartCore/Bundle/DbDumperBundle" vcs="Git" />
@@ -13,7 +23,6 @@
     <mapping directory="$PROJECT_DIR$/src/SmartCore/Bundle/RichEditorBundle" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/src/SmartCore/Bundle/SeoBundle" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/src/SmartCore/Bundle/SettingsBundle" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/src/SmartCore/Bundle/SimpleProfilerBundle" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/src/SmartCore/Bundle/SitemapBundle" vcs="Git" />
   </component>
 </project>
