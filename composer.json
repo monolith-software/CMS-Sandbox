@@ -16,7 +16,7 @@
         "files": [ "vendor/symfony/symfony/src/Symfony/Component/VarDumper/Resources/functions/dump.php" ]
     },
     "require": {
-        "php": ">=7.1.0",
+        "php": "^7.2",
 
         "dario_swain/ds-recaptcha-bundle": "dev-master",
         "friendsofsymfony/comment-bundle": "dev-master",
@@ -116,7 +116,7 @@
         "twig/extensions": "^1.5",
         "twig/twig": "^2.0",
         "ua-parser/uap-php": "^3.5",
-        "vich/uploader-bundle": "^1.6",
+        "vich/uploader-bundle": "*",
         "webmozart/path-util": "^2.3",
         "white-october/pagerfanta-bundle": "~1.0@dev",
         "whiteoctober/breadcrumbs-bundle": "~1.0@dev",
