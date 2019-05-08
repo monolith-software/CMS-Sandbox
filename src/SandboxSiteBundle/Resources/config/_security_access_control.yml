@@ -1,0 +1,16 @@
+security:
+    # access_control нельзя переопределить, по этому нужно полностью в одном месте.
+    access_control:
+        - { path: ^/_assistant/, roles: ROLE_ADMIN }
+        - { path: ^/%admin_path%/$, role: IS_AUTHENTICATED_ANONYMOUSLY }
+        - { path: ^/%admin_path%/resetting$, role: IS_AUTHENTICATED_ANONYMOUSLY }
+        - { path: ^/%admin_path%/system/config/, role: ROLE_ADMIN_CONFIG }
+        - { path: ^/%admin_path%, roles: ROLE_ADMIN }
+        - { path: ^/efconnect, role: ROLE_FILEMANAGER }
+        - { path: ^/elfinder, role: ROLE_FILEMANAGER }
+        - { path: ^/%user_path%/$, roles: IS_AUTHENTICATED_ANONYMOUSLY }
+        - { path: ^/%user_path%/register, role: IS_AUTHENTICATED_ANONYMOUSLY }
+        - { path: ^/%user_path%/resetting, role: IS_AUTHENTICATED_ANONYMOUSLY }
+        - { path: ^/%user_path%, role: ROLE_USER }
+        #- { path: ^/login, role: IS_AUTHENTICATED_ANONYMOUSLY, requires_channel: https }
+        #- { path: ^/_internal, role: IS_AUTHENTICATED_ANONYMOUSLY, ip: 127.0.0.1 }
