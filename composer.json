@@ -72,7 +72,6 @@
         "incenteev/composer-parameter-handler": "^2.0",
         "intervention/image": "*",
         "ircmaxell/random-lib": "^1.2",
-        "jms/di-extra-bundle": "*",
         "jms/serializer-bundle": "*",
         "kleegroup/google-recaptcha-bundle": "^1.0",
         "knplabs/knp-gaufrette-bundle": "*",
