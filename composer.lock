@@ -1508,16 +1508,16 @@
         },
         {
             "name": "carono/commerceml",
-            "version": "0.2.3",
+            "version": "0.2.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/carono/php-commerceml.git",
-                "reference": "5c9cf7e46349b178866f3f9444ca7bb404055dc6"
+                "reference": "8e4d87583c926a4d887f272974570dd91ef22d6a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/carono/php-commerceml/zipball/5c9cf7e46349b178866f3f9444ca7bb404055dc6",
-                "reference": "5c9cf7e46349b178866f3f9444ca7bb404055dc6",
+                "url": "https://api.github.com/repos/carono/php-commerceml/zipball/8e4d87583c926a4d887f272974570dd91ef22d6a",
+                "reference": "8e4d87583c926a4d887f272974570dd91ef22d6a",
                 "shasum": ""
             },
             "require": {
@@ -1529,7 +1529,8 @@
             "type": "library",
             "autoload": {
                 "psr-4": {
-                    "Zenwalker\\CommerceML\\": "src/"
+                    "Zenwalker\\CommerceML\\": "src/",
+                    "Zenwalker\\CommerceML\\Tests\\": "tests/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -1554,7 +1555,7 @@
                 "1c",
                 "commerceml"
             ],
-            "time": "2018-10-16T17:10:48+00:00"
+            "time": "2019-05-08T13:17:19+00:00"
         },
         {
             "name": "cboden/ratchet",
@@ -4488,12 +4489,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/FriendsOfSymfony/FOSElasticaBundle.git",
-                "reference": "b08530d69bc1432201c8900cbad81bf207a3044b"
+                "reference": "a8c4c75b9b346dec6922c61062dbb04392b6230d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/FriendsOfSymfony/FOSElasticaBundle/zipball/b08530d69bc1432201c8900cbad81bf207a3044b",
-                "reference": "b08530d69bc1432201c8900cbad81bf207a3044b",
+                "url": "https://api.github.com/repos/FriendsOfSymfony/FOSElasticaBundle/zipball/a8c4c75b9b346dec6922c61062dbb04392b6230d",
+                "reference": "a8c4c75b9b346dec6922c61062dbb04392b6230d",
                 "shasum": ""
             },
             "require": {
@@ -4567,7 +4568,7 @@
                 "mongodb",
                 "search"
             ],
-            "time": "2019-05-06T10:32:45+00:00"
+            "time": "2019-05-08T15:04:47+00:00"
         },
         {
             "name": "friendsofsymfony/http-cache",
@@ -16924,16 +16925,16 @@
         },
         {
             "name": "phpunit/phpunit",
-            "version": "7.5.9",
+            "version": "7.5.10",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit.git",
-                "reference": "134669cf0eeac3f79bc7f0c793efbc158bffc160"
+                "reference": "d7d9cee051d03ed98df6023aad93f7902731a780"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/134669cf0eeac3f79bc7f0c793efbc158bffc160",
-                "reference": "134669cf0eeac3f79bc7f0c793efbc158bffc160",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/d7d9cee051d03ed98df6023aad93f7902731a780",
+                "reference": "d7d9cee051d03ed98df6023aad93f7902731a780",
                 "shasum": ""
             },
             "require": {
@@ -17004,7 +17005,7 @@
                 "testing",
                 "xunit"
             ],
-            "time": "2019-04-19T15:50:46+00:00"
+            "time": "2019-05-09T05:06:47+00:00"
         },
         {
             "name": "sebastian/code-unit-reverse-lookup",
