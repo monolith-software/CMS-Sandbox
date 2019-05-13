@@ -7,6 +7,19 @@ Monolith CMS Development Sandbox
  - Возможность кастомизировать сущность User. 
  - Переделать загрузку файлов в МК через \Symfony\Component\HttpFoundation\File\File вместо UploadedFile
  
+ 
+Conflicts with Symfony 4
+------------------------
+ - "egulias/listeners-debug-command-bundle": "*",
+ - "sensio/distribution-bundle": "^5.0.19",
+ - "kleegroup/google-recaptcha-bundle": "^1.0",
+ - "sensio/generator-bundle": "^3.0",
+ - "liuggio/excelbundle": "^2.1", 
+ - "phpdocumentor/reflection-docblock": "*",
+
+Git submodule hints
+-------------------
+ 
 Получение последней версии песочницы:
 ```
     git pull;git submodule update --init
