@@ -68,7 +68,7 @@
         "happyr/google-api-bundle": "*",
         "helios-ag/fm-elfinder-bundle": "~8",
         "helios-ag/fm-elfinder-php-connector": "*",
-        "hwi/oauth-bundle": "0.5.*@dev",
+        "hwi/oauth-bundle": "0.6.*@dev",
         "incenteev/composer-parameter-handler": "^2.0",
         "intervention/image": "*",
         "ircmaxell/random-lib": "^1.2",
@@ -137,8 +137,8 @@
         "friendsofphp/php-cs-fixer": "^2.8",
         "liip/functional-test-bundle": "^1.8",
         "nelmio/alice": "^3.1",
-        "phpunit/phpunit": "^7.0",
-        "symfony/phpunit-bridge": "^3.0"
+        "phpunit/phpunit": "^8.0",
+        "symfony/phpunit-bridge": "^4.0"
     },
     "scripts": {
         "init-scripts": [
