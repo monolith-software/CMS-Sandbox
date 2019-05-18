@@ -1,0 +1,7 @@
+name: monolith/symfony-offsite
+title: Symfony
+locale: ru # Язык по умолчанию
+#sites: [1, 2] # Доступно для сайтов. Если не указать, то будет доступно для всех сайтов.
+description: Hi
+version: '1.0'
+developer: Sensio Labs
